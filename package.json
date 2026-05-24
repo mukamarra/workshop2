@@ -1,0 +1,45 @@
+{
+  "name": "workshop2",
+  "version": "0.0.0",
+  "description": "workshop2 project",
+  "homepage": "https://github.com/mukamarra/workshop2#readme",
+  "bugs": {
+    "url": "https://github.com/mukamarra/workshop2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mukamarra/workshop2.git"
+  },
+  "license": "MIT",
+  "author": "Nazar Kobzar",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "lint": "eslint . --ext .ts",
+    "lint:fix": "eslint . --ext .ts --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/demo.ts",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^21.0.1",
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^25.9.1",
+    "commitlint": "^21.0.1",
+    "eslint": "^10.4.0",
+    "eslint-config-prettier": "^10.1.8",
+    "husky": "^9.1.7",
+    "prettier": "^3.8.3",
+    "tsup": "^8.5.1",
+    "tsx": "^4.22.3",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.59.4"
+  }
+}
