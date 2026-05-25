@@ -1,8 +1,7 @@
 import { config } from './config.js';
 
-// Базові функції з попередніх кроків
-export function add(a: number, b: number): number {
-  return a + b;
+export function add(values: number[]): number {
+  return values.reduce((acc, x) => acc + x, 0);
 }
 
 export function capitalize(s: string): string {
